@@ -8,7 +8,7 @@ az network nsg create `
     # [--tags]
 
 
-"Create Network Security Rule"
+"Create Network Security Rule 1"
 az network nsg rule create `
     --resource-group $RGName `
     --nsg-name $NSGName `
@@ -26,7 +26,7 @@ az network nsg rule create `
     # [--source-asgs]
 
 
-"Create Network Security Rule"
+"Create Network Security Rule 2"
 az network nsg rule create `
     --resource-group $RGName `
     --nsg-name $NSGName `
@@ -34,8 +34,8 @@ az network nsg rule create `
     --access Deny `
     --direction Inbound `
     --source-port-ranges * `
-    --destination-port-ranges 3389 `
-    --priority 100
+    --destination-port-ranges 22 `
+    --priority 101
     # [--description]
     # [--destination-address-prefixes]
     # [--destination-asgs]
